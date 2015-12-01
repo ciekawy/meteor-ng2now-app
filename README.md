@@ -10,3 +10,7 @@ typings resolved from DefinitelyTyped repo and manually downloaded files as well
 
 It's also worth to read [angular-meteor](http://www.angular-meteor.com/tutorials/socially/angular2/bootstrapping) tutorials for both Angular 1 & 2 versions
 
+### running
+its enough to checkout and run `meteor`
+
+it should be also possible to import project to IDEA and all Angular, TypeScript, meteor feature should be available (Meteor and AngularJS plugin need to be installed)
