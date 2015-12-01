@@ -1,0 +1,16 @@
+{
+  "name": "meteor-ng2now-app",
+  "version": "0.0.1",
+  "description": "boilerplate for meteor + angular + typescript",
+  "dependencies": {
+    "tsd": "^0.6.5"
+  },
+  "devDependencies": {
+    "tsd": "^0.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Szymon Stasik",
+  "license": "MIT"
+}
