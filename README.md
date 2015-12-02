@@ -14,3 +14,9 @@ It's also worth to read [angular-meteor](http://www.angular-meteor.com/tutorials
 its enough to checkout and run `meteor`
 
 it should be also possible to import project to IDEA and all Angular, TypeScript, meteor feature should be available (Meteor and AngularJS plugin need to be installed)
+
+### TODO
+- describe project architecture
+- some step by step guide how to build this project from scratch
+- server side angular
+- tests (client/server)

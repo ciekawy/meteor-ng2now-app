@@ -15,5 +15,3 @@ class ElementOne {
     console.debug("app: ", app)
   }
 }
-
-console.log('asdasd')

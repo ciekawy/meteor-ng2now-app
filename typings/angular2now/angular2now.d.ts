@@ -17,6 +17,8 @@ declare module 'angular2now' {
   export var SetModule: typeof angular2now.SetModule;
 
   export var Inject: typeof angular2now.Inject;
+
+  export var MeteorMethod: typeof angular2now.MeteorMethod;
 }
 
 declare module angular2now {
@@ -36,6 +38,8 @@ declare module angular2now {
   export function SetModule(appName: string, dependencies?: string[]);
 
   export function options(config: options);
+
+  export function MeteorMethod(config?: options);
 
   export function Inject(dependencies: string[]);
 

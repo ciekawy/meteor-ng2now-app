@@ -1,4 +1,4 @@
-import {Inject, View, Component, State} from "angular2now"
+import {Inject, View, Component, State, MeteorMethod} from "angular2now"
 
 //SetModule('app')
 
@@ -12,6 +12,11 @@ class ElementTwo {
   cde: number;
   constructor (app) {
     this.cde = 3450;
-    console.debug("app: ", app)
+    this.returnDummyText('from client').then((result) => {
+      console.debug("from server: ", result);
+    });
   }
+
+  @MeteorMethod()
+  returnDummyText(arg?: string) {}
 }
