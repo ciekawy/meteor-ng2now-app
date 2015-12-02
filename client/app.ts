@@ -1,13 +1,19 @@
-import {Component, View, SetModule, bootstrap} from 'angular2now';
+import {Component, View, SetModule, bootstrap, State} from 'angular2now'
 
-SetModule('app', ['angular-meteor']);
+SetModule('app', ['angular-meteor', 'ui.router', 'ui.bootstrap']);
 
-@Component({
-  selector: 'app'
+@State({
+  name: 'home',
+  url: '',
+  abstract: true,
+  resolve: {
+    user: () => 'paul',
+    role: () => 'admin'
+  }
 })
-@View({
-  templateUrl: 'client/app.ng.html'
-})
+
+@Component('app')
+@View('client/app.ng.html')
 class App {
   aaa: "asd";
   constructor() {

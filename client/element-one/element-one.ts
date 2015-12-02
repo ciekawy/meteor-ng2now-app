@@ -1,9 +1,11 @@
-import {SetModule, Inject, View, Component, State} from "angular2now"
+import {Inject, View, Component, State} from "angular2now"
+
+//SetModule('app');
 
 @State({ name: 'home.one', url: '/one' })
 
-@Component({selector: 'element-one'})
-@View({ templateUrl: 'element-one.ng.html' })
+@Component('element-one')
+@View('client/element-one/element-one.ng.html')
 @Inject( ['app'] )
 
 class ElementOne {
@@ -13,3 +15,5 @@ class ElementOne {
     console.debug("app: ", app)
   }
 }
+
+console.log('asdasd')

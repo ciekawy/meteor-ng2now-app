@@ -1,4 +1,14 @@
 <div class="container">
     <h1>Hello</h1>
     {{"World"}}!
+    <br>
+    <div class="panel panel-default">
+        <ul class="nav nav-tabs" role="tablist">
+            <!-- TODO: iterate over registered components -->
+            <li ui-sref-active="active"><a ui-sref="home.one">Home 1</a></li>
+            <li ui-sref-active="active"><a ui-sref="home.two">Home 2</a></li>
+        </ul>
+
+        <div ui-view=""></div>
+    </div>
 </div>
