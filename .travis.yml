@@ -11,4 +11,4 @@ before_install:
   - export PATH="$HOME/.meteor:$PATH"
   - "npm install -g 'git+https://github.com/anticoders/gagarin.git#develop'"
 
-script: "gagarin -v -T 20000"
+script: "gagarin -v -T 40000"
