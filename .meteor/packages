@@ -24,3 +24,6 @@ angularui:angular-ui-router
 angularui:angular-ui-bootstrap
 angular
 bootstrap
+sanjo:jasmine
+anti:gagarin@=0.4.11
+check

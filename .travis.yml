@@ -1,10 +1,14 @@
-## Add this file to your meteor package as `.travis.yml`
+# This is how you tell travis to run the build on the new container (docker) based infrastructure
+sudo: false
 
-sudo: required
 language: node_js
 node_js:
-  - "0.8"
-  - "0.10"
+  - "0.10.36"
 
+# Since sudo isn't possible anymore (for now), meteor can't add a link to itself to /usr/local/bin, so you'll have to add the meteor installation folder to the PATH yourself.
 before_install:
-  - "curl -L http://git.io/ejPSng | /bin/sh"
+  - "curl https://install.meteor.com | /bin/sh"
+  - export PATH="$HOME/.meteor:$PATH"
+  - "npm install -g gagarin"
+
+script: "gagarin -v"
